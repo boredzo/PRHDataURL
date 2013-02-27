@@ -15,4 +15,10 @@
 
 @implementation UnitTests
 
+- (void)testEmptyData;
+{
+    NSURL *url = [[NSData data] dataURLWithMimeType_PRH:@"application/octet-stream"];
+    STAssertEqualObjects(url.absoluteString, @"data:application/octet-stream;base64,", nil);
+}
+
 @end
