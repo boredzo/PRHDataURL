@@ -38,4 +38,17 @@
     STAssertEqualObjects(url.absoluteString, @"data:application/octet-stream;base64,", nil);
 }
 
+- (void)testPlainText;
+{
+    NSURL *url = [PRHDataURL dataURLWithMIMEType:@"text/plain" string:@"A brief note"];
+    STAssertEqualObjects(url.absoluteString, @"data:text/plain,A%20brief%20note", nil);
+}
+
+- (void)testPlainTextWithoutMIMEType;
+{
+    // Example from http://tools.ietf.org/html/rfc2397
+    NSURL *url = [PRHDataURL dataURLWithMIMEType:nil string:@"A brief note"];
+    STAssertEqualObjects(url.absoluteString, @"data:,A%20brief%20note", nil);
+}
+
 @end

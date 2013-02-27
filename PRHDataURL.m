@@ -37,4 +37,10 @@
 	return [NSURL URLWithString:URLString];
 }
 
++ (NSURL *) dataURLWithMIMEType:(NSString *)mimeType string:(NSString *)string {
+    if (!mimeType) mimeType = @"";
+    NSString *URLString = [NSString stringWithFormat:@"data:%@,%@", mimeType, [string stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]];
+	return [NSURL URLWithString:URLString];
+}
+
 @end

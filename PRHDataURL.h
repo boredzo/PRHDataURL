@@ -12,4 +12,8 @@
 
 + (NSURL *) dataURLWithMIMEType:(NSString *)mimeType data:(NSData *)data;
 
+// Passing nil for mimeType generates a URL without a type encoded, which clients interpret as being:
+//  text/plain;charset=US-ASCII
++ (NSURL *) dataURLWithMIMEType:(NSString *)mimeType string:(NSString *)string;
+
 @end
