@@ -11,7 +11,7 @@
 		27DCD3E516DE5ED200C00496 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DCD3E416DE5ED200C00496 /* Cocoa.framework */; };
 		27DCD3EF16DE5ED200C00496 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27DCD3ED16DE5ED200C00496 /* InfoPlist.strings */; };
 		27DCD3F216DE5ED200C00496 /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DCD3F116DE5ED200C00496 /* UnitTests.m */; };
-		27DCD3F916DE5F2D00C00496 /* NSData+PRHDataURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DCD3F816DE5F2D00C00496 /* NSData+PRHDataURL.m */; };
+		27DCD3F916DE5F2D00C00496 /* PRHDataURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DCD3F816DE5F2D00C00496 /* PRHDataURL.m */; };
 		27DCD3FB16DE5FB200C00496 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DCD3FA16DE5FB200C00496 /* Security.framework */; };
 		27DCD3FD16DE61CE00C00496 /* Red-dot-5px.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DCD3FC16DE61CE00C00496 /* Red-dot-5px.png */; };
 /* End PBXBuildFile section */
@@ -27,8 +27,8 @@
 		27DCD3EE16DE5ED200C00496 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27DCD3F116DE5ED200C00496 /* UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTests.m; sourceTree = "<group>"; };
 		27DCD3F316DE5ED200C00496 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
-		27DCD3F716DE5F2D00C00496 /* NSData+PRHDataURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+PRHDataURL.h"; sourceTree = "<group>"; };
-		27DCD3F816DE5F2D00C00496 /* NSData+PRHDataURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+PRHDataURL.m"; sourceTree = "<group>"; };
+		27DCD3F716DE5F2D00C00496 /* PRHDataURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRHDataURL.h; sourceTree = "<group>"; };
+		27DCD3F816DE5F2D00C00496 /* PRHDataURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHDataURL.m; sourceTree = "<group>"; };
 		27DCD3FA16DE5FB200C00496 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		27DCD3FC16DE61CE00C00496 /* Red-dot-5px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-dot-5px.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,8 +50,8 @@
 		27DCD3D316DE5E6A00C00496 = {
 			isa = PBXGroup;
 			children = (
-				27DCD3F716DE5F2D00C00496 /* NSData+PRHDataURL.h */,
-				27DCD3F816DE5F2D00C00496 /* NSData+PRHDataURL.m */,
+				27DCD3F716DE5F2D00C00496 /* PRHDataURL.h */,
+				27DCD3F816DE5F2D00C00496 /* PRHDataURL.m */,
 				27DCD3EA16DE5ED200C00496 /* UnitTests */,
 				27DCD3E116DE5ED200C00496 /* Frameworks */,
 				27DCD3E016DE5ED200C00496 /* Products */,
@@ -187,7 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27DCD3F216DE5ED200C00496 /* UnitTests.m in Sources */,
-				27DCD3F916DE5F2D00C00496 /* NSData+PRHDataURL.m in Sources */,
+				27DCD3F916DE5F2D00C00496 /* PRHDataURL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +309,7 @@
 				27DCD3F516DE5ED200C00496 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
