@@ -15,6 +15,23 @@
 
 @implementation UnitTests
 
+- (void)testBase64Encoding;
+{
+    // First example from http://en.wikipedia.org/wiki/Data_URI_scheme
+    NSURL *redDotURL = [[NSBundle bundleForClass:[UnitTests class]] URLForImageResource:@"Red-dot-5px.png"];
+    STAssertNotNil(redDotURL, nil);
+    
+    NSData *redDotData = [NSData dataWithContentsOfURL:redDotURL];
+    STAssertNotNil(redDotData, nil);
+    
+    NSURL *redDotDataURL = [redDotData dataURLWithMimeType_PRH:@"image/png"];
+    STAssertEqualObjects(redDotDataURL.absoluteString,
+                         @"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA"
+                         @"AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO"
+                         @"9TXL0Y4OHwAAAABJRU5ErkJggg==",
+                         nil);
+}
+
 - (void)testEmptyData;
 {
     NSURL *url = [[NSData data] dataURLWithMimeType_PRH:@"application/octet-stream"];

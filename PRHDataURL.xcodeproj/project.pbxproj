@@ -13,6 +13,7 @@
 		27DCD3F216DE5ED200C00496 /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DCD3F116DE5ED200C00496 /* UnitTests.m */; };
 		27DCD3F916DE5F2D00C00496 /* NSData+PRHDataURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DCD3F816DE5F2D00C00496 /* NSData+PRHDataURL.m */; };
 		27DCD3FB16DE5FB200C00496 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DCD3FA16DE5FB200C00496 /* Security.framework */; };
+		27DCD3FD16DE61CE00C00496 /* Red-dot-5px.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DCD3FC16DE61CE00C00496 /* Red-dot-5px.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		27DCD3F716DE5F2D00C00496 /* NSData+PRHDataURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+PRHDataURL.h"; sourceTree = "<group>"; };
 		27DCD3F816DE5F2D00C00496 /* NSData+PRHDataURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+PRHDataURL.m"; sourceTree = "<group>"; };
 		27DCD3FA16DE5FB200C00496 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		27DCD3FC16DE61CE00C00496 /* Red-dot-5px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-dot-5px.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		27DCD3EB16DE5ED200C00496 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27DCD3FC16DE61CE00C00496 /* Red-dot-5px.png */,
 				27DCD3EC16DE5ED200C00496 /* UnitTests-Info.plist */,
 				27DCD3ED16DE5ED200C00496 /* InfoPlist.strings */,
 				27DCD3F316DE5ED200C00496 /* UnitTests-Prefix.pch */,
@@ -156,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27DCD3EF16DE5ED200C00496 /* InfoPlist.strings in Resources */,
+				27DCD3FD16DE61CE00C00496 /* Red-dot-5px.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
