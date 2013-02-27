@@ -1,5 +1,5 @@
 //
-//  NSData+PRHDataURL.h
+//  PRHDataURL.h
 //  QLDataURL
 //
 //  Created by Peter Hosey on 2012-09-29.
@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSData (PRHDataURL)
+@interface PRHDataURL : NSURL
 
-- (NSURL *) dataURLWithMimeType_PRH:(NSString *)mimeType;
++ (NSURL *) dataURLWithMIMEType:(NSString *)mimeType data:(NSData *)data;
 
 @end

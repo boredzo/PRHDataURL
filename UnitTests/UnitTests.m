@@ -7,7 +7,7 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
-#import "NSData+PRHDataURL.h"
+#import "PRHDataURL.h"
 
 @interface UnitTests : SenTestCase
 
@@ -24,7 +24,7 @@
     NSData *redDotData = [NSData dataWithContentsOfURL:redDotURL];
     STAssertNotNil(redDotData, nil);
     
-    NSURL *redDotDataURL = [redDotData dataURLWithMimeType_PRH:@"image/png"];
+    NSURL *redDotDataURL = [PRHDataURL dataURLWithMIMEType:@"image/png" data:redDotData];
     STAssertEqualObjects(redDotDataURL.absoluteString,
                          @"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA"
                          @"AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO"
@@ -34,7 +34,7 @@
 
 - (void)testEmptyData;
 {
-    NSURL *url = [[NSData data] dataURLWithMimeType_PRH:@"application/octet-stream"];
+    NSURL *url = [PRHDataURL dataURLWithMIMEType:@"application/octet-stream" data:[NSData data]];
     STAssertEqualObjects(url.absoluteString, @"data:application/octet-stream;base64,", nil);
 }
 
